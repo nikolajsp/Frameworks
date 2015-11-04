@@ -6,6 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+// Indlæser de forskellige modeller
+require('./models/posts');
+require('./models/comments');
+
+// Opretter forbindelse til Mongodb serveren
+mongoose.connect('mongodb://localhost/food')
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
