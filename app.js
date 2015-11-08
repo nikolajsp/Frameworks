@@ -11,7 +11,8 @@ require('./models/posts');
 require('./models/comments');
 
 // Opretter forbindelse til Mongodb serveren
-mongoose.connect('mongodb://localhost/food')
+//mongoose.connect('mongodb://localhost/food')
+mongoose.connect('mongodb://nikolaj:123456n@ds063909.mongolab.com:63909/test_nikolaj')
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
